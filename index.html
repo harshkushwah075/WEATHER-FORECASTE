@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="weather-container">
+        <div class="search-box-container">
+            <input type="text" id="city-input" placeholder="Enter city name..." />
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div id="loading" class="loading-spinner"></div>
+        <p id="error-message" class="error-message"></p>
+
+        <div id="main-weather" class="main-weather-card">
+            <!-- Main weather data will be dynamically inserted here -->
+        </div>
+
+        <div class="daily-forecast-container">
+            <h2 id="forecast-heading">5-Day Forecast</h2>
+            <div id="weather-cards" class="weather-cards-container">
+                <!-- Daily forecast cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
